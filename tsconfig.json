@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true // Allows other loaders to be chained to awesome-typescript-loader
+  },
+  "files": [
+    "typings/index.d.ts"
+  ]
+}
