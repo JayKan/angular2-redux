@@ -1,0 +1,61 @@
+contact-list {
+  display: block;
+
+  header {
+    background-color: #303F9F;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 2px -2px #444;
+  }
+
+  #container {
+    max-width: 420px;
+    display: block;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+
+  .user {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    width: 10%;
+  }
+
+  .user img {
+    width: 40px;
+    border-radius: 50%;
+    border: #fff 2px solid;
+  }
+
+  .add-contact {
+    border: 1px solid #f1f1f1;
+    height: 55px;
+    padding: 5px 5px 5px 25px;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    color: #444;
+  }
+
+  .add-phone {
+
+  }
+  .add-contact:focus,
+  .add-phone:focus {
+    outline: none;
+  }
+
+  .contact-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-list li {
+    display: block;
+  }
+}

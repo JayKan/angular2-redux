@@ -1,0 +1,24 @@
+<div id="container">
+
+  <header>
+    <div class="user">
+      <img src="https://avatars.githubusercontent.com/jaykan">
+    </div>
+    <div class="heading-user">
+      <strong>Jay Kan</strong>
+      <br/>
+      <small>@jaykan</small>
+    </div>
+  </header>
+
+  <input #newContact
+         class="add-contact"
+         placeholder="Add Contact"
+         (keyup.enter)="addContact(newContact.value); newContact.value='' ">
+
+  <ul class="contact-list">
+    <li *ngFor="let record of _store.contacts">
+      <contact [data]="record"></contact>
+    </li>
+  </ul>
+</div>

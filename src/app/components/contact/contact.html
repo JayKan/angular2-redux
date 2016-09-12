@@ -1,0 +1,15 @@
+<div class="contact-container">
+  <i class="fa fa-user fa-2x contact-icon"></i>
+  <div class="contact-info">
+    <h3 class="heading-name">{{ data.name }}</h3>
+    <div class="contact-item">
+      <i class="fa fa-phone"></i> XXX-XXX-XXXX
+    </div>
+  </div>
+  <button class="contact-action" (click)="starContact(data)">
+    <i class="fa fa-2x" [class.fa-star]="data.star" [class.fa-star-o]="!data.star"></i>
+  </button>
+  <button class="contact-action" (click)="removeContact(data)">
+    <i class="fa fa-trash fa-2x"></i>
+  </button>
+</div>
